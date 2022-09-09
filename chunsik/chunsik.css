@@ -1,0 +1,150 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.chunsik {
+    position: relative;
+    margin: 50px auto;
+    width: 400px;
+    height: 380px;
+}
+
+.chunsik .face {
+    position: absolute;
+    bottom: 0;
+    width: 400px;
+    height: 367px;
+
+    background: #f9c883;
+    border: 3px solid black;
+    border-radius: 50% 50% 40% 40%;
+}
+
+.chunsik .ear {
+    position: absolute;
+    top: 30px;
+    width: 90px;
+    height: 90px;
+    border-radius: 30px;
+    background: #f9c883;
+    border: 3px solid black;
+}
+
+.chunsik .ear.left {
+    left: 30px;
+}
+
+.chunsik .ear.right {
+    right: 30px;
+}
+
+.chunsik .eye {
+    position: absolute;
+    top: 150px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: black;
+}
+
+.chunsik .eye.left {
+    left: 110px;
+}
+
+.chunsik .eye.right {
+    right: 110px;
+}
+
+.chunsik .nose {
+    position: absolute;
+    top: 200px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background: white;
+    border: 3px solid black;
+    z-index: 5;
+}
+
+.chunsik .nose.left {
+    left: 135px;
+}
+
+.chunsik .nose.right {
+    right: 135px;
+}
+
+.chunsik .nose:before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    width: 110px;
+    height: 60px;
+    border-top: 4px solid black;
+    border-radius: 100%;
+    background: white;
+    z-index: 15;
+}
+
+.chunsik .nose.left:before {
+    left: 4px;
+}
+
+.chunsik .nose.right:before {
+    right: 4px;
+}
+
+.chunsik .mouth {
+    position: absolute;
+    top: 220px;
+    left: 168px;
+    width: 60px;
+    height: 70px;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 60%;
+    background: #ed7b5c;
+    border: 3px solid black;
+}
+
+.chunsik .whisker {
+    position: absolute;
+    top: 220px;
+    width: 50px;
+    height: 15px;
+    border-radius: 50px;
+    background: black;
+}
+
+.chunsik .whisker.left {
+    left: 110px;
+}
+
+.chunsik .whisker.left.up {
+    top: 210px;
+    transform: rotate(25deg);
+}
+
+.chunsik .whisker.left.down {
+    top: 245px;
+    transform: rotate(-15deg);
+}
+
+.chunsik .whisker.right {
+    right: 110px;
+}
+
+.chunsik .whisker.right.up {
+    top: 210px;
+    transform: rotate(-25deg);
+}
+
+.chunsik .whisker.right.down {
+    top: 245px;
+    transform: rotate(15deg);
+}
