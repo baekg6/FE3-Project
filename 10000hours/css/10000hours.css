@@ -1,0 +1,307 @@
+/* @font-face {
+    font-family: "OTEnjoystoriesBA";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: "GmarketSansBold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GmarketSansMedium";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2")
+            format("woff2"),
+        url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff")
+            format("woff"),
+        url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf")
+            format("opentype");
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* body */
+body {
+    background-color: #5b2386;
+}
+
+/* app */
+#app {
+    text-align: center;
+    color: white;
+    font-family: "GmarketSansMedium";
+    font-size: 18px;
+    line-height: 18px;
+}
+
+/* img-title */
+.tit-timelaw {
+    margin: 0 auto;
+    /* background-color: aqua; */
+    margin-bottom: 100px;
+}
+
+.img-title {
+    position: relative;
+    z-index: 10;
+    top: 200px;
+    width: 564px;
+}
+
+.img-clock {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 261px;
+    height: 265px;
+}
+
+/* img-quotes */
+.img-sub-title {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 78px;
+}
+
+.img-quotes {
+    position: relative;
+    top: 40px;
+}
+
+.txt-desc {
+    font-family: "GmarketSansMedium";
+    line-height: 24px;
+    margin-bottom: 102px;
+}
+
+.tit-desc {
+    font-family: "GmarketSansBold";
+    font-size: 24px;
+    line-height: 24px;
+}
+
+/* input */
+.cont-input {
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.cont-input {
+    position: relative;
+    margin-bottom: 147px;
+}
+
+.txt-wannabe {
+    margin-bottom: 27px;
+}
+
+.txt-time {
+    margin-bottom: 115px;
+}
+
+.cont-input input {
+    width: 228px;
+    height: 57px;
+    border-radius: 7px;
+    border: transparent;
+    margin: 0 12px;
+
+    font-family: "GmarketSansMedium";
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.cont-input input::placeholder {
+    color: #babcbe;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.btn-exc {
+    background-color: #fcee21;
+    max-width: fit-content;
+    border-radius: 56px;
+    padding: 21px 49px;
+    gap: 10px;
+
+    border: transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+    font-family: "GmarketSansBold";
+    color: #5b2386;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.cont-input img {
+    position: absolute;
+    bottom: -20px;
+}
+
+/* result */
+.cont-result {
+    margin-bottom: 130px;
+    font-family: "GmarketSansMedium";
+}
+
+.txt-wannabe strong,
+.txt-time strong {
+    font-family: "GmarketSansBold";
+    font-size: 72px;
+    line-height: 72px;
+}
+
+.btn-go {
+    font-family: "GmarketSansBold";
+    background-color: #fcee21;
+    max-width: fit-content;
+
+    border: transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+    padding: 21px 49px;
+    margin: 0px 15px;
+    gap: 10px;
+
+    color: #5b2386;
+    font-family: "GmarketSansBold";
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.btn-share {
+    max-width: fit-content;
+    max-height: fit-content;
+    border-radius: 56px;
+    padding: 21px 49px;
+    gap: 10px;
+
+    border: transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border: transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+    color: #5b2386;
+    font-family: "GmarketSansBold";
+    font-size: 24px;
+    line-height: 24px;
+}
+
+/* footer */
+.cont-footer {
+    text-align: center;
+    margin: 0 atuo;
+    color: white;
+    font-family: "Noto Sans KR";
+    font-size: 12px;
+    line-height: 17.38px;
+    margin-bottom: 50px;
+}
+
+.cont-footer img {
+    padding: 20px;
+}
+.txt-footer {
+    display: block;
+}
+
+/* modal */
+.cont-modal {
+    width: 800px;
+    height: 800px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 76px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.cont-modal img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* ##nth-of-type  */
+.cont-modal img:nth-of-type(1) {
+    margin-bottom: 10px;
+}
+
+.cont-modal img:nth-of-type(2) {
+    margin-bottom: 29px;
+}
+
+.cont-modal img:nth-of-type(3) {
+    margin-bottom: 29px;
+    margin-bottom: 74px;
+}
+
+/* 여긴 아직 공사중! */
+/* ##요소들의 간격을 margin-bottom으로 조정해도 되나..? */
+/* Tablet */
+@media (max-width: 768px) {
+    .img-title {
+        width: 430px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 394px) {
+    .tit-timelaw {
+        margin-bottom: 60px;
+    }
+
+    .img-title {
+        position: relative;
+        top: 128px;
+        width: 267px;
+    }
+    .img-clock {
+        position: relative;
+        top: 35px;
+        width: 125px;
+        height: 126px;
+    }
+
+    .img-sub-title {
+        width: 297px;
+    }
+
+    .txt-desc,
+    .tit-desc {
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
