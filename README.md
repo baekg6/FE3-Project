@@ -9,6 +9,7 @@
 | 02 | 모두의 HTML/CSS | [바로가기](./everylion) | 진행 중 |
 | 03 | 1만 시간의 법칙 | [바로가기](https://github.com/baekg6/FE3-10000hours) | 진행 중 |
 | 04 | 버킷 리스트 | [바로가기](./bucketlist) | 완료 |
+| 05 | 로그인 레이아웃 | [바로가기](./login) | 완료 |
 
 
 <br/>
