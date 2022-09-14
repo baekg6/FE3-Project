@@ -5,23 +5,26 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: "EarlyFontDiary";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2")
-        format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
 
 * {
     font-family: "SpoqaHanSansNeo-Regular";
-    /* font-family: "EarlyFontDiary"; */
     font-size: 12px;
-    line-height: 15px;
+    line-height: 15.02px;
 
     box-sizing: border-box;
 }
 
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+body,
+button,
 p {
     margin: 0;
     padding: 0;
@@ -32,8 +35,8 @@ a {
 }
 
 /* Component */
-
 .cont-login {
+    margin: 20px;
     padding: 19px 16px;
     width: 350px;
     height: 140px;
@@ -43,45 +46,51 @@ a {
     border-radius: 5px;
 }
 
-.txt-info {
-    margin-bottom: 16px;
-}
-
 .btn-login {
-    display: block;
-    margin: 0 auto 17px;
-    text-align: center;
-    align-items: center;
-    background: #711bff;
-    border-radius: 4px;
+    position: relative;
+    top: 16px;
     width: 318px;
     height: 40px;
-    color: white;
+    text-align: center;
 
-    display: flex;
-    justify-content: center;
+    background-color: #711bff;
+    border: transparent;
+    border-radius: 2px;
+
+    color: white;
 }
 
 .btn-login img {
-    height: 18px;
+    display: inline-block;
+    vertical-align: -3.6px;
+    width: 64px;
 }
 
 .menu {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    top: 30px;
 }
 
-.menu > div {
-    display: flex;
-    justify-content: center;
+.menu * {
+    color: #767676;
+}
+
+.menu img {
+    vertical-align: -3px;
+}
+
+.icon {
+    width: 16px;
+}
+.find {
+    float: left;
+}
+.join {
+    float: right;
 }
 
 .find a {
     margin: 0 4px;
-}
-.icon {
-    width: 16px;
-    height: 16px;
 }
 
 .join a {
