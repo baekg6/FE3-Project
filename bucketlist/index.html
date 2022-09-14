@@ -2,26 +2,27 @@
 <html>
     <head>
         <title>My Bucket Lists</title>
+        <link rel="stylesheet" href="pseudo.css" />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <div class="wrapper">
-            <header class="header">
-                <h1 class="header__title">My Bucket List</h1>
-            </header>
-            <main class="main">
-                <ul class="main__list">
-                    <li class="main__list__item">
-                        Travel all around the world
-                    </li>
-                    <li class="main__list__item">Learn a new language</li>
-                    <li class="main__list__item">
-                        Try a profession in a different field
-                    </li>
-                    <li class="main__list__item">Achieve your ideal weight</li>
-                    <li class="main__list__item">Run a marathon</li>
-                </ul>
-            </main>
+            <section class="buckets">
+                <header class="buckets-header">
+                    <h1>My Bucket List</h1>
+                </header>
+                <div class="buckets-contents">
+                    <ol class="lists">
+                        <li>Travel all around the world</li>
+                        <li class="active">Learn a new language</li>
+                        <li>Try a profession in a different field</li>
+                        <li>Achieve your ideal weight</li>
+                        <li>Run a marathon</li>
+                    </ol>
+                </div>
+            </section>
         </div>
+
+        <script src="pseudo.js"></script>
     </body>
 </html>
