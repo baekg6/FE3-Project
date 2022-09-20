@@ -1,0 +1,90 @@
+/* 폰트를 로컬에 저장해서 사용하면 좀 더 안정적 */
+
+@font-face {
+    font-family: "Spoqa Han Sans Neo";
+    src: url("../images/fonts/SpoqaHanSansNeo-Regular.otf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Spoqa Han Sans Neo";
+    src: url("../images/fonts/SpoqaHanSansNeo-Medium.otf");
+    font-weight: 500;
+}
+
+body {
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.cont-login {
+    width: 350px;
+    margin: 50px auto;
+    padding: 18px 15px 17px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+}
+
+.txt-login {
+    margin-bottom: 16px;
+}
+
+.cont-login .link-login {
+    display: block;
+    padding: 13px 20px 12px;
+    margin-bottom: 17px;
+
+    background-color: #711bff;
+    border-radius: 4px;
+    color: white;
+
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+}
+
+.link-login .img-login {
+    width: 57px;
+    height: 11px;
+    margin-right: 6px;
+}
+
+.cont-login .find {
+    float: left;
+}
+
+.cont-login .find * {
+    float: left;
+}
+
+.cont-login .join {
+    float: right;
+    margin-right: 1px;
+}
+
+.cont-login .join * {
+    float: left;
+}
+
+.cont-login .img-find,
+.cont-login .img-join {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.find [class^="link"],
+.join [class^="link"] {
+    color: #767676;
+    text-decoration: none;
+}
+
+.find .link-id::after {
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 11px;
+    background-color: #767676;
+    margin: 0 6px 0 5px;
+}
