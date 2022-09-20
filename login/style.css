@@ -6,21 +6,10 @@
     font-style: normal;
 }
 
+/* Reset */
+
 * {
-    font-family: "SpoqaHanSansNeo-Regular";
-    font-size: 12px;
-    line-height: 15.02px;
-
     box-sizing: border-box;
-}
-
-.blind {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
 }
 
 body,
@@ -34,10 +23,28 @@ a {
     text-decoration: none;
 }
 
+.txt-hide {
+    position: absolute;
+    clip-path: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
 /* Component */
+
+body {
+    font-family: "SpoqaHanSansNeo-Regular";
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+}
+
 .cont-login {
     margin: 20px;
-    padding: 19px 16px;
+    /* paddig은 boder 제외 거리 */
+    padding: 18px 15px 17px;
     width: 350px;
     height: fit-content;
 
@@ -69,16 +76,17 @@ a {
     vertical-align: -3.6px;
     width: 64px;
 }
-
-.menu * {
+.find,
+.join {
     color: #767676;
 }
-
-.menu img {
-    vertical-align: -3px;
+.find a,
+.join a {
+    color: inherit;
 }
 
 .icon {
+    vertical-align: -3px;
     width: 16px;
 }
 .find {
