@@ -6,6 +6,84 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Dropdown</title>
         <link rel="stylesheet" href="reset.css" />
+        <style>
+            .cont-select {
+                position: relative;
+                width: 200px;
+                margin: 100px auto;
+
+                font-size: 14px;
+                line-height: 16px;
+                font-weight: 400;
+            }
+
+            .btn-select {
+                width: 100%;
+                height: 40px;
+                padding: 12px 13px;
+
+                border: 1px solid #c4c4c4;
+                border-radius: 10px;
+
+                text-align: left;
+                background: url(images/icon-polygon-down.png) right 12px center no-repeat;
+
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+
+                cursor: pointer;
+            }
+
+            .btn-select:focus {
+                outline: 3px solid #f8e4ff;
+                border: 1px solid #9b51e0;
+            }
+
+            .btn-select.on {
+                background: url(images/icon-polygon-up.png) right 12px center no-repeat;
+            }
+
+            .btn-select.on + .list-member {
+                display: block;
+            }
+
+            .list-member {
+                display: none;
+                width: 100%;
+                position: absolute;
+                top: 49px;
+                left: 0;
+
+                background-color: #fff;
+                border: 1px solid #c4c4c4;
+                border-radius: 10px;
+                box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+            }
+
+            .list-member li {
+                padding: 5px 8px;
+            }
+
+            .list-member li button {
+                width: 100%;
+                padding: 7px 10px;
+
+                background-color: inherit;
+                border: none;
+                border-radius: 8px;
+                text-align: left;
+
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+
+            .list-member li button:focus,
+            .list-member li button:hover {
+                background-color: #f8e4ff;
+            }
+        </style>
     </head>
     <body>
         <article class="cont-select">
@@ -19,5 +97,12 @@
                 <li><button type="button">C/C++</button></li>
             </ul>
         </article>
+
+        <script>
+            const btn = document.querySelector(".btn-select");
+            btn.addEventListener("click", () => {
+                btn.classList.toggle("on");
+            });
+        </script>
     </body>
 </html>
