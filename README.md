@@ -1,5 +1,6 @@
 # 프론트엔드 스쿨 3기 과제 및 추가 학습 코드 저장소
 > 최종 업데이트: 2022. 09. 19.
+> https://baekg6.github.io/FE3-Assignment/
 
 <br/>
 
