@@ -51,3 +51,108 @@ body {
     line-height: 28px;
     color: white;
 }
+
+/* cont-modal */
+.cont-modal {
+    width: 520px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    background: #fff;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+}
+.cont-modal .header {
+    border-bottom: 1px solid #c4c4c4;
+    position: relative;
+    text-align: center;
+}
+
+.header .tit-modal {
+    display: inline-block;
+    margin: 29px auto 18px;
+}
+
+.header .btn-close {
+    width: 16px;
+    height: 16px;
+
+    position: absolute;
+    top: 18px;
+    right: 30px;
+
+    background: #fff;
+    cursor: pointer;
+}
+
+.cont-modal .login {
+    display: flex;
+    flex-direction: column;
+    padding: 26px 23px;
+}
+
+.login .txt-info {
+    margin-bottom: 24px;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.login .form-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-login input[type="text"] {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 14px 15px;
+
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+}
+
+.form-login .inp_pw {
+    margin-bottom: 16px;
+}
+.form-login input[type="text"]::placeholder {
+    color: #c4c4c4;
+}
+
+.form-login .labl-hold {
+    margin: 16px 0 21px;
+}
+
+.form-login .labl-hold::before {
+    display: inline-block;
+    content: " ";
+    width: 22px;
+    height: 22px;
+    vertical-align: -5px;
+    margin-right: 05px;
+    background-image: url("../images/icon_check_empty.png");
+}
+/* 클릭 시 이미지 변경 */
+.from-login .inp-hold:checked + .labl-hold::before {
+    background-image: url("../images/icon_check.png");
+}
+
+/* focusing 효과(접근성)) */
+.form-login .inp-hold:focus + .labl-hold::before {
+    /* boder와 달리 outline은 레이아웃에 영향을 미치지 않는다 */
+    outline: 2px solid dodgerblue;
+    outline-offset: 1px;
+    border-radius: 50%;
+}
+
+.form-login .btn-login {
+    height: 50px;
+    padding: 14px auto;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+}
