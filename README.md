@@ -1,6 +1,6 @@
 # 프론트엔드 스쿨 3기 프로젝트 저장소
 > 최종 업데이트: 2022. 09. 22.  
-> [https://baekg6.github.io/FE3-Assignment/](https://baekg6.github.io/FE3-Project/)
+> [데모페이지로 이동](https://baekg6.github.io/FE3-Project/)
 
 <br/>
 
